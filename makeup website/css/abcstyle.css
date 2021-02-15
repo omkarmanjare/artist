@@ -1,0 +1,340 @@
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;}
+body {
+  background-color: #151215;
+    color: #bb8ab1;
+    font-family: Arial, "Open Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+  /* font-family: Verdana, sans-serif; */
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) ,background img set */
+.numbertext {
+  color: #f2f2f2;
+  /* font-size: 12px; */
+  /* padding: 8px 12px; */
+  /* background-image:url(img/pexels-julia-volk-6155894.jpg),url(img/pexels-qazi-ikram-ul-haq-1385478.jpg); */
+  background-image:url(img/827728499601936619.png);
+  /* position: absolute; */
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* komal*/
+html{
+font-family:Arial, Helvetica, sans-serif ;
+background-color: #f2f2f2;
+color:blueviolet;
+font-size: 50px;
+}
+
+
+.row/*This is to set the contents to center*/   
+{
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+}
+/* main img possition */
+.hero-text{
+position: absolute;
+width: 1140px;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.hero-text-title
+{
+  
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    
+    /* transform: translate(-50%,-50%); */
+  
+    
+}
+
+/* header */
+.h1
+{
+  margin: 0;
+  /* width: 50px; */
+  /* word-spacing: 2px; */
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+/* header TITLE-INFO */
+.hml
+{
+ 
+font-size: 25px;
+width:1140px; 
+/* position: absolute; */
+text-align: center;
+word-spacing: 2px;
+margin-bottom: 10px;
+text-decoration: #f2f2f2;
+color: #f2f2f2;
+
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* top:15px; */
+
+}
+.P{
+  margin: 0;
+  line-height: 145%;
+  font-size: 60px;
+  
+}
+/* logo */
+.logo{
+width: auto;
+height: 100px;
+
+float: left;
+}
+/* navigation */
+.main-nav
+{
+  float: right;
+  font-size: 20px;
+  width: auto;
+  text-decoration: blanchedalmond;
+  margin: auto;
+  border-width: thick;
+  list-style: none;
+ 
+}
+.main-nav li{
+  display: inline-block;
+ margin: 20px;
+ color: azure;
+}
+.main-nav li a{
+  color: rgb(82, 162, 165);
+  display: inline;
+  list-style: none;
+  text-decoration:#717171;
+}
+/* Add an "active" class to the current link to let the user know which page he/she is on:
+
+ */
+.active {
+  background-color: #4CAF50;
+}
+.section-features
+.long-cpoy{
+  margin-bottom: 35px;
+}
+.section{
+  padding: 80px 0px;  /*This is used to add whitespace between sections. Margin can be also be used instead of passing, but if any background color is added then it should cover the margin areas. hence Padding is used.*/
+} 
+
+
+/* information */
+.info-sect
+{
+  width:100%;
+  list-style: none;
+  
+}
+
+.info-sect li
+{
+  display:block;
+  float: left;
+  width:25%;
+ 
+  /* width determine by main tag eg.section info css width is suppose 100% and you want 2 images i
+  n one line that time width is divided by 2 */
+
+}
+
+.beautyphoto
+{
+  width :100%;
+  margin:0;
+}
+.beautyphoto img
+{
+  height:25vh;
+  width:100%;
+  object-fit: cover;
+  width: 100%;
+  
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float:right;
+  width:25%;
+  padding: 1px;
+}
+
+/* Clear floats after image containers */
+/* side by side */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.container{
+  width:1140px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  top:50px;
+  /* bottom: 50%; */
+}
+
+
+.post-thumb img {
+  float: left;
+  /* clear:left; */
+  width: 50%;
+  height: auto;
+
+  
+}
+
+.post-content {
+  float: left;
+  /* margin-right: 210px; */
+  width :50%;
+  padding:25px;
+  
+  /* float:left; */
+  
+ 
+}
+/* contact */
+.section-contact
+{
+  width:1140px;
+  /* height: 400px; */
+  margin-left: auto;
+  margin-right: auto;
+  top:50px;
+}
+
+
+/*Map*/
+.gmap_canvas{
+float: left;
+width: auto;
+  height: auto;
+}
+.contact_text{
+  float: left;
+ width :50%;
+  padding:25px;
+}
+/* services */
+.section-services{
+/* background-color: #bb8ab1; */
+/* height: 800px; */
+top:50px;
+margin-left: auto;
+margin-right: auto;
+/* display: block; */
+/* position: absolute; */
+
+}
+
+.section-services img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* background-position: 50% 50%; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+.section-services h1
+{
+  color: #bb8ab1;
+  /* font-style: normal; */
+font-size: 25px;overflow: hidden;
+overflow: hidden;
+font-family: 'Playfair Display', serif;
+
+}
+
+/*Omkar Services*/
+.section-services1{
+  background-color:khaki ;
+  height: fit-content;
+}
